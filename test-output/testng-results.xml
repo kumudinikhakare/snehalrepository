@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-05T10:35:49 IST" name="Suite" finished-at="2022-08-05T10:36:09 IST" duration-ms="20074">
+    <groups>
+    </groups>
+    <test started-at="2022-08-05T10:35:49 IST" name="Test" finished-at="2022-08-05T10:36:09 IST" duration-ms="20074">
+      <class name="com.SauceDemo.Testclass.verifylogoutfunctionality">
+        <test-method is-config="true" signature="setupmethod(java.lang.String)[pri:0, instance:com.SauceDemo.Testclass.verifylogoutfunctionality@441772e]" started-at="2022-08-05T10:35:49 IST" name="setupmethod" finished-at="2022-08-05T10:36:03 IST" duration-ms="13983" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupmethod -->
+        <test-method signature="logOutFunctionality()[pri:0, instance:com.SauceDemo.Testclass.verifylogoutfunctionality@441772e]" started-at="2022-08-05T10:36:03 IST" name="logOutFunctionality" finished-at="2022-08-05T10:36:04 IST" duration-ms="833" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[Element <a id="logout_sidebar_link" class="bm-item menu-item" href="#"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-70J9PKF7', ip: '192.168.0.111', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220729222726, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 30292, moz:profile: C:\Users\91866\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6a873172-334c-4b3d-b3c0-e80605932fca]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a id="logout_sidebar_link" class="bm-item menu-item" href="#"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-70J9PKF7', ip: '192.168.0.111', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220729222726, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 30292, moz:profile: C:\Users\91866\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6a873172-334c-4b3d-b3c0-e80605932fca
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at NPOMcom.SauceDemo.logoutPOM2.clickOnLogOutButton(logoutPOM2.java:29)
+at com.SauceDemo.Testclass.verifylogoutfunctionality.logOutFunctionality(verifylogoutfunctionality.java:27)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutFunctionality -->
+        <test-method is-config="true" signature="teardownmethod()[pri:0, instance:com.SauceDemo.Testclass.verifylogoutfunctionality@441772e]" started-at="2022-08-05T10:36:04 IST" name="teardownmethod" finished-at="2022-08-05T10:36:05 IST" duration-ms="1726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownmethod -->
+      </class> <!-- com.SauceDemo.Testclass.verifylogoutfunctionality -->
+      <class name="com.SauceDemo.Testclass.verifyallitempagefunctionality">
+        <test-method is-config="true" signature="setupmethod(java.lang.String)[pri:0, instance:com.SauceDemo.Testclass.verifyallitempagefunctionality@7334aada]" started-at="2022-08-05T10:35:49 IST" name="setupmethod" finished-at="2022-08-05T10:36:01 IST" duration-ms="12587" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupmethod -->
+        <test-method signature="mutipleProductAddToCartFunctionality()[pri:0, instance:com.SauceDemo.Testclass.verifyallitempagefunctionality@7334aada]" started-at="2022-08-05T10:36:01 IST" name="mutipleProductAddToCartFunctionality" finished-at="2022-08-05T10:36:05 IST" duration-ms="3908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mutipleProductAddToCartFunctionality -->
+        <test-method is-config="true" signature="teardownmethod()[pri:0, instance:com.SauceDemo.Testclass.verifyallitempagefunctionality@7334aada]" started-at="2022-08-05T10:36:05 IST" name="teardownmethod" finished-at="2022-08-05T10:36:07 IST" duration-ms="1620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownmethod -->
+      </class> <!-- com.SauceDemo.Testclass.verifyallitempagefunctionality -->
+      <class name="com.SauceDemo.Testclass.VerifyloginFunctionality">
+        <test-method is-config="true" signature="setupmethod(java.lang.String)[pri:0, instance:com.SauceDemo.Testclass.VerifyloginFunctionality@3427b02d]" started-at="2022-08-05T10:35:49 IST" name="setupmethod" finished-at="2022-08-05T10:36:01 IST" duration-ms="12587" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupmethod -->
+        <test-method signature="loginFuntionality()[pri:0, instance:com.SauceDemo.Testclass.VerifyloginFunctionality@3427b02d]" started-at="2022-08-05T10:36:01 IST" name="loginFuntionality" finished-at="2022-08-05T10:36:02 IST" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFuntionality -->
+        <test-method is-config="true" signature="teardownmethod()[pri:0, instance:com.SauceDemo.Testclass.VerifyloginFunctionality@3427b02d]" started-at="2022-08-05T10:36:02 IST" name="teardownmethod" finished-at="2022-08-05T10:36:03 IST" duration-ms="1396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownmethod -->
+      </class> <!-- com.SauceDemo.Testclass.VerifyloginFunctionality -->
+      <class name="com.SauceDemo.Testclass.verifysingleitempagefunctionality">
+        <test-method is-config="true" signature="setupmethod(java.lang.String)[pri:0, instance:com.SauceDemo.Testclass.verifysingleitempagefunctionality@1d9b7cce]" started-at="2022-08-05T10:35:49 IST" name="setupmethod" finished-at="2022-08-05T10:36:07 IST" duration-ms="18052" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupmethod -->
+        <test-method signature="bagProductAddTOCartFunctionality()[pri:0, instance:com.SauceDemo.Testclass.verifysingleitempagefunctionality@1d9b7cce]" started-at="2022-08-05T10:36:07 IST" name="bagProductAddTOCartFunctionality" finished-at="2022-08-05T10:36:07 IST" duration-ms="423" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [2] but found [1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [2] but found [1]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.SauceDemo.Testclass.verifysingleitempagefunctionality.bagProductAddTOCartFunctionality(verifysingleitempagefunctionality.java:27)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bagProductAddTOCartFunctionality -->
+        <test-method is-config="true" signature="teardownmethod()[pri:0, instance:com.SauceDemo.Testclass.verifysingleitempagefunctionality@1d9b7cce]" started-at="2022-08-05T10:36:07 IST" name="teardownmethod" finished-at="2022-08-05T10:36:09 IST" duration-ms="1521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownmethod -->
+      </class> <!-- com.SauceDemo.Testclass.verifysingleitempagefunctionality -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

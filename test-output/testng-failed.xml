@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Test(failed)">
+    <parameter name="browsername" value="Firefox"/>
+    <classes>
+      <class name="com.SauceDemo.Testclass.verifysingleitempagefunctionality">
+        <methods>
+          <include name="setupmethod"/>
+          <include name="bagProductAddTOCartFunctionality"/>
+          <include name="teardownmethod"/>
+        </methods>
+      </class> <!-- com.SauceDemo.Testclass.verifysingleitempagefunctionality -->
+      <class name="com.SauceDemo.Testclass.verifylogoutfunctionality">
+        <methods>
+          <include name="setupmethod"/>
+          <include name="logOutFunctionality"/>
+          <include name="teardownmethod"/>
+        </methods>
+      </class> <!-- com.SauceDemo.Testclass.verifylogoutfunctionality -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
